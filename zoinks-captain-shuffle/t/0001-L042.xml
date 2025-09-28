@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="42">
+    <page id="356004" title="Zoinks Captain Shuffle Page 1" descr="0" voice="no">
+		<t id="10001">Přiřadit flotile mé nejlepší nepřidělené kapitány.</t>
+		<t id="10002">Zrušit tuto objednávku.</t>
+		<t id="10003">Chci optimalizovat kapitány naší flotily.</t>
+		<t id="10004">Výsledky přeřazení posádky:</t>
+		<t id="10005">Akce: Vyměněný pilot => Nový pilot => Loď</t>
+		<t id="10006">Přeřazení flotily zahájeno.</t>
+		<t id="10007">Začíná přeřazení flotily %s s vlajkovou lodí %s.</t>
+	</page>
+</language>

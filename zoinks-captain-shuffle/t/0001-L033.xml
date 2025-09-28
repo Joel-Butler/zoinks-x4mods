@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="33">
+    <page id="356004" title="Zoinks Captain Shuffle Page 1" descr="0" voice="no">
+		<t id="10001">Affecter mes meilleurs capitaines non affectés à la flotte.</t>
+		<t id="10002">Annuler cette commande.</t>
+		<t id="10003">Je souhaite optimiser nos capitaines de flotte.</t>
+		<t id="10004">Résultats de la réaffectation de l'équipage :</t>
+		<t id="10005">Actions : Pilote remplacé => Nouveau pilote => Navire</t>
+		<t id="10006">Réaffectation de la flotte lancée.</t>
+		<t id="10007">Début de la réaffectation de la flotte %s avec le vaisseau amiral %s.</t>
+	</page>
+</language>

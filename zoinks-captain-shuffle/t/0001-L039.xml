@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="39">
+    <page id="356004" title="Zoinks Captain Shuffle Page 1" descr="0" voice="no">
+		<t id="10001">Assegna i miei migliori Capitani non assegnati alla flotta.</t>
+		<t id="10002">Annulla questo ordine.</t>
+		<t id="10003">Voglio ottimizzare i capitani della nostra flotta.</t>
+		<t id="10004">Risultati della riassegnazione dell'equipaggio:</t>
+		<t id="10005">Azioni: Pilota sostituito => Nuovo pilota => Nave</t>
+		<t id="10006">Riassegnazione della flotta avviata.</t>
+		<t id="10007">Inizio della riassegnazione per la flotta %s con l'ammiraglia %s.</t>
+	</page>
+</language>

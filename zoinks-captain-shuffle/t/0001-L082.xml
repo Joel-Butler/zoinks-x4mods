@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="82">
+    <page id="356004" title="Zoinks Captain Shuffle Page 1" descr="0" voice="no">
+		<t id="10001">최고의 미배치 함장을 함대에 배치합니다.</t>
+		<t id="10002">이 명령을 취소합니다.</t>
+		<t id="10003">함대 함장을 최적화하고 싶습니다.</t>
+		<t id="10004">승무원 재배치 결과:</t>
+		<t id="10005">작업: 조종사 교체 => 새 조종사 => 함선</t>
+		<t id="10006">함대 재배치가 시작되었습니다.</t>
+		<t id="10007">함대 %s(기함 %s 포함)에 대한 재배치를 시작합니다.</t>
+	</page>
+</language>

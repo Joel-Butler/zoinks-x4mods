@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="49">
+    <page id="356004" title="Zoinks Captain Shuffle Page 1" descr="0" voice="no">
+		<t id="10001">Meine besten nicht zugewiesenen Kapitäne der Flotte zuweisen.</t>
+		<t id="10002">Diesen Auftrag stornieren.</t>
+		<t id="10003">Ich möchte unsere Flottenkapitäne optimieren.</t>
+		<t id="10004">Ergebnisse der Besatzungsneuzuweisung:</t>
+		<t id="10005">Aktionen: Pilot ersetzt => Neuer Pilot => Schiff</t>
+		<t id="10006">Flottenneuzuweisung eingeleitet.</t>
+		<t id="10007">Neuzuweisung für Flotte %s mit Flaggschiff %s beginnt.</t>	</page>
+</language>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="Jbm_CaptainShuffle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+	<cues>
+    <cue name="Init">
+        <conditions>
+            <check_any>
+                <event_universe_generated />
+                <event_game_loaded />
+                <event_cue_signalled cue="md.Setup.Start" />
+            </check_any>
+        </conditions>
+        <actions>
+          <set_value name="$ZoinksCaptainDebug" exact="0" />
+          <set_value name="$Zoinkslua_response" exact="''"/>
+          <debug_text text="'Init Match!'" chance="$ZoinksCaptainDebug" />
+        </actions>
+        <cues>
+          <cue name="FleetCaptainChat" instantiate="true">
+            <conditions>
+              <check_any>
+                <event_conversation_started conversation="default" />
+              </check_any>
+              <!-- is this a fleet manager and is the ship player owned... using '@' as we're not interested in errors if the value doesn't exist... -->
+              <check_value value="@event.object.assignedcontrolled.fleet.iscommander" />
+              <check_value value="@event.object.assignedcontrolled.owner == faction.player" />
+            </conditions>
+             <actions>
+              <add_player_choice_sub text="{356004,10003}" section="FleetCaptainSubMenu"/>
+              <debug_text text="'Conversation Match!'" chance="$ZoinksCaptainDebug" />
+            </actions>
+          </cue>
+          <cue name="FleetCaptainSubmenu" instantiate="true">
+            <conditions>
+              <check_any>
+                <event_conversation_next_section section="FleetCaptainSubMenu"/>
+                <event_conversation_returned_to_section section="FleetCaptainSubMenu"/>
+                <event_cue_signalled />
+              </check_any>
+            </conditions>
+            <actions>
+              <add_player_choice_sub text="{356004,10001}" section="AssignCaptainsToFleet" position="top_left"/>
+               <add_player_choice_return text="{356004,10002}" position="bottom_right" />
+            </actions>
+          </cue>
+          <cue name="FleetAssign" instantiate="true ">
+            <conditions>
+              <check_any>
+                <event_conversation_next_section section="AssignCaptainsToFleet"/>
+                <event_conversation_returned_to_section section="AssignCaptainsToFleet"/>
+                <event_cue_signalled />
+              </check_any>
+            </conditions>
+            <actions>
+              <!-- our event.object is the fleet manager... -->
+              <raise_lua_event name="'ZoinksCaptainShuffle'" param="event.object.assignedcontrolled" />
+              <cancel_conversation actor="event.object" />
+              <write_to_logbook category="general" title="{356004,10006}" text="{356004,10007}.[event.object.assignedcontrolled.fleet.name, event.object.assignedcontrolled.name]" />
+              <reset_cue cue="this" />
+            </actions>
+          </cue>
+          <cue name="ZoinksCSLuaActionEvent" instantiate="true">
+            <conditions>
+              <event_ui_triggered screen="'ZoinksShuffle'"/>
+            </conditions>
+            <actions>
+              <write_to_logbook category="general" title="'lua results:'" text="event.param2" />
+              <reset_cue cue="this" />
+            </actions>
+          </cue>
+          <cue name="ZoinksCSLuaActionEventResults" instantiate="true">
+            <conditions>
+              <event_ui_triggered screen="'ZoinksShuffleResults'"/>
+            </conditions>
+            <actions>
+              <write_to_logbook category="general" title="{356004,10004}" text="{356004,10005} + '\n\n' + event.param2" />
+              <reset_cue cue="this" />
+            </actions>
+          </cue>
+        </cues>
+      </cue>
+  </cues>
+</mdscript>

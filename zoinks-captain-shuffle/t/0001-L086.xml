@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="86">
+    <page id="356004" title="Zoinks Captain Shuffle Page 1" descr="0" voice="no">
+		<t id="10001">将我最优秀的未分配舰长分配到舰队。</t>
+		<t id="10002">取消此订单。</t>
+		<t id="10003">我想优化我们的舰队舰长。</t>
+		<t id="10004">船员重新分配结果：</t>
+		<t id="10005">操作：更换飞行员 => 新飞行员 => 舰船</t>
+		<t id="10006">舰队重新分配已启动。</t>
+		<t id="10007">开始对舰队 %s 进行重新分配，旗舰为 %s。</t>
+	</page>
+</language>

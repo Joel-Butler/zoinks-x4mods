@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="48">
+    <page id="356004" title="Zoinks Captain Shuffle Page 1" descr="0" voice="no">
+		<t id="10001">Przypisz moich najlepszych nieprzydzielonych kapitanów do floty.</t>
+		<t id="10002">Anuluj to polecenie.</t>
+		<t id="10003">Chcę zoptymalizować naszą flotę kapitanów.</t>
+		<t id="10004">Wyniki reorganizacji załogi:</t>
+		<t id="10005">Działania: Zastąpiono pilota => Nowy pilot => Statek</t>
+		<t id="10006">Rozpoczęto reorganizację floty.</t>
+		<t id="10007">Rozpoczęcie reorganizacji floty %s z okrętem flagowym %s.</t>
+	</page>
+</language>

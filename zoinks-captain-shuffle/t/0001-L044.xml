@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<language id="44">
+    <page id="356004" title="Zoinks Captain Shuffle Page 1" descr="0" voice="no">
+		<t id="10001">Assign my best Unallocated Captains to fleet.</t>
+		<t id="10002">Cancel this order.</t>
+		<t id="10003">I want to optimise our fleet captains.</t>
+		<t id="10004">Crew Reassignment Results:</t>
+		<t id="10005">Actions: Replaced Pilot => New Pilot => Ship</t>
+		<t id="10006">Fleet Reassignment initiated.</t>
+		<t id="10007">Beginning reassignment for fleet %s with Flagship %s.</t>
+	</page>
+</language>
