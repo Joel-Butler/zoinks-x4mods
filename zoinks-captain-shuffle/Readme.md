@@ -13,7 +13,8 @@ Egosoft - without the existing UI examples I would not have managed to figure th
 First release (0.2)
 
 ## Known issues
-A ship that is full with unassigned crew may fail to correctly assign a captain as expected. As this is not a breaking issue I'm hoping to resolve this in a later release.
+* A ship that is full with unassigned crew may fail to correctly assign a captain as expected. As this is not a breaking issue I'm hoping to resolve this in a later release.
+* Translations from english are machine driven and probably not great. 
 
 ## Mod Overview
 
